@@ -2,26 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --primary-color: 93, 194, 255;
+  --secondary-color: 223, 243, 255;
+  --primary-background-color: 14, 16, 17;
+  --secondary-background-color: 5, 22, 32;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  margin: 0;
+  font-size: 1.25rem;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: Montserrat;
+  background-color: rgb(var(--secondary-background-color));
+  color: rgb(var(--secondary-color));
+  overflow-x: hidden;
+}
+
+h1 {
+  @apply text-3xl;
+}
+
+h2, .h2 {
+  @apply text-2xl;
+}
+
+h3 {
+  @apply text-xl;
+}
+
+button.primary-btn {
+  @apply bg-primary text-background font-medium rounded-xl px-3xl py-2 cursor-pointer border-transparent outline-none;
+}
+
+.map__control {
+  @apply grid place-items-center bg-background rounded-3xl cursor-pointer;
+}
+
+.menu__grid { 
+  @apply grid grid-cols-[0.25fr_1fr_2fr_1.5fr_1.2fr_0.8fr_0.8fr_0.8fr] items-center py-4 px-8 gap-4 font-normal;
 }
