@@ -1,6 +1,6 @@
 export default function CitiesScrollLine({ cities }: { cities: string[] }) {
   const cityElements = cities.map(city => 
-    <p key={city} className='text-base transition-[color] cursor-pointer hover:text-primary'>{city}</p>
+    <p key={city} className='text-base font-light transition-[color] cursor-pointer hover:text-primary'>{city}</p>
   )
 
 

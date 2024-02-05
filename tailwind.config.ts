@@ -8,31 +8,24 @@ const config: Config = {
   ],
   theme: {
     fontSize: {
-      sm: ['1.0625rem', {
-        fontWeight: '200',
-      }],
+      sm: '1.0625rem',
       base: ['1.25rem', {
         lineHeight: '1.5rem',
-        fontWeight: '200',
       }],
-      xl: ['1.875rem', {
-        fontWeight: '600',
-      }],
+      xl: '1.875rem',
       '2xl': ['3.125rem', {
         lineHeight: '3.8125rem',
-        fontWeight: '600',
       }],
       '3xl': ['4.375rem', {
         lineHeight: '4.8rem',
-        fontWeight: '600',
       }],
     },
     extend: {
       colors: {
         'primary': 'rgba(var(--primary-color), <alpha-value>)',
         'secondary': 'rgba(var(--secondary-color), <alpha-value>)',
-        'background': 'rgba(var(--secondary-background-color), <alpha-value>)',
-        'primary-background': 'rgba(var(--primary-background-color), <alpha-value>)',
+        'light-background': 'rgba(var(--light-background-color), <alpha-value>)',
+        'background': 'rgba(var(--background-color), <alpha-value>)',
       },
       opacity: {
         '3': '.03',

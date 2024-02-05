@@ -11,7 +11,7 @@ export default function PrimaryButton({ children }: { children?: React.ReactNode
   }
 
   return (
-    <button className='primary-btn' onClick={redirectToMap}>
+    <button className='btn-primary' onClick={redirectToMap}>
       {children}
     </button>
   )

@@ -1,13 +1,13 @@
 import Image from 'next/image'
-import InfoCard from './_components/InfoCard/InfoCard'
-import CitiesScrollLine from './_components/CitiesScrollLine/CitiesScrollLine'
-import PrimaryButton from './_components/PrimaryButton/PrimaryButton'
+import InfoCard from './_components/InfoCard'
+import CitiesScrollLine from './_components/CitiesScrollLine'
+import PrimaryButton from './_components/PrimaryButton'
 
 
 export default function Home() {
 	return (
     <>
-      <header className='fixed top-0 z-1 inset-x-0 flex justify-between items-center h-[5rem] px-8 font-medium backdrop-blur backdrop-brightness-[80%] shadow-xl'>
+      <header className='text-base fixed top-0 z-1 inset-x-0 flex justify-between items-center h-[5rem] px-8 font-medium backdrop-blur backdrop-brightness-[80%] shadow-xl'>
         <div>
           <p>Smart Cities Map</p>
         </div>
@@ -59,7 +59,7 @@ export default function Home() {
             </a>
           </div>
         </section>
-        <section className='grid gap-9 my-28'>
+        <section className='grid gap-9 my-28 text-base'>
           <div className='grid gap-4'>
             <CitiesScrollLine
               cities={[
@@ -100,11 +100,11 @@ export default function Home() {
               ]}
             />
           </div>
-          <p className='text-end m-auto w-content text-primary opacity-80'>- Дослідіть провідні міста світу</p>
+          <p className='text-end font-light m-auto w-content text-primary opacity-80'>- Дослідіть провідні міста світу</p>
         </section>
         <section className='relative my-10'>
           <div className='absolute top-6 inset-x-0 flex justify-center'>
-            <p className='bg-background text-sm font-medium px-6 py-2 rounded-full'>Попередній перегляд</p>
+            <p className='bg-light-background text-sm font-medium px-6 py-2 rounded-full'>Попередній перегляд</p>
           </div>
           <Image
             className='rounded-3xl test shadow-[0.25rem_0.25rem_2rem_0_rgba(0,0,0,0.5)] cursor-pointer'
@@ -118,7 +118,6 @@ export default function Home() {
       <footer>
         <div className='bg-[url(/waves/wave2.svg)] opacity-5 bg-cover h-[18vh] w-full'/>
         <div className='flex flex-col justify-between items-center h-32 bg-primary/5 pb-8'>
-          {/* 
           <div className='flex gap-12 *:*:h-8 *:transition-[transform] *:duration-200'>
             <a className='hover:scale-[1.15]' href='https://www.youtube.com' target='_blank'>
               <img src='/logos/youtube.png' alt='YouTube Logo'/>
@@ -136,7 +135,6 @@ export default function Home() {
               <img src='/logos/facebook.png' alt='Facebook Logo'/>
             </a>
           </div> 
-          */}
           <p className='text-sm'>Copyright © 2024 Smart Cities Map - All rights reserved || Created By: Me</p>
         </div>
       </footer>
